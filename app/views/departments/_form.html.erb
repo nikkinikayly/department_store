@@ -1,0 +1,8 @@
+<%= @department.id ? 'Edit Department' : 'Create Department' %>
+
+<%= form_for @department do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, autofocus: true %>
+    <%= f.submit %>
+
+<% end %>
